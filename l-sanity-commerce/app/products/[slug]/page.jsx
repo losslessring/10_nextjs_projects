@@ -59,10 +59,11 @@ export default async function SingleProduct({ params }) {
                                 style={{
                                     background: `url(${product.mainImage.asset.url})`,
                                     backgroundSize: 'contain',
+                                    // backgroundSize: '0%',
                                 }}
-                                className="h-[500px] w-full rounded-lg"
+                                className="bg-size-[0%] md:h-[500px] w-full rounded-lg"
                             >
-                                <div className="flex h-[500px] items-center justify-center bg-black/50">
+                                <div className="flex md:h-[500px] items-center justify-center bg-neutral-900 md:bg-black/50">
                                     <article className="mx-auto max-w-lg space-y-4 text-center">
                                         <h1 className="text-4xl font-bold text-white lg:text-5xl">
                                             {product.title}
