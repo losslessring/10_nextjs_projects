@@ -58,7 +58,7 @@ export default async function Products() {
                             </CardHeader>
 
                             <CardContent>
-                                <CardTitle className="flex flex-wrap items-center justify-between">
+                                <CardTitle className="flex flex-wrap items-center justify-between text-neutral-400">
                                     {product.title}{' '}
                                     {!product.price ? null : (
                                         <span className="text-sm">
